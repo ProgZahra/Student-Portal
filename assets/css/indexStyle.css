@@ -1,0 +1,188 @@
+.container-fluid {
+    padding: 60px 50px;
+}
+
+/* jumbotron cover image */
+.jumbotron {
+    color: #ffffff; /* White */
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/background.jpeg);
+    background-position: top;
+    background-size: cover;
+    height: 100vh;  
+    position: relative;
+}
+
+/* jumbotron text */
+.jumbotron-content{
+    background: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;  
+}
+
+/* To make the cover image fixed and not scrollable with content */
+@media (min-width: 1024px){
+    .jumbotron {
+        background-attachment: fixed;
+    }
+}
+
+
+/* About */
+#about{
+    padding-top: 30px;
+}
+
+/* Features Section */
+.features-figure{
+    width: 70%;
+    margin: auto;
+    min-width: 200px;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    transition: transform 0.5s; 
+    border-radius: 15px;
+    -webkit-backface-visibility: hidden; /* add to fix webkit bug jitter */
+    -webkit-transform: perspective(1000px); /* add to fix webkit bug jitter */
+}
+.features-figure:hover{     
+    transform:scale(1.05); 
+    -webkit-box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);   
+}
+a.features-link{
+    color: #818181; 
+}
+a.features-link:hover{
+    text-decoration: none;
+    color: #818181; 
+}
+.features-figure img{
+    border-radius: 15px;
+}
+
+/* Classes Section */
+.classes-img{
+    border-radius: 50%;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    cursor: pointer;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-backface-visibility: hidden; /* add to fix webkit bug jitter */
+    -webkit-transform: perspective(1000px); /* add to fix webkit bug jitter */
+}
+.classes-img:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-box-shadow: 10px 10px 23px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 23px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 23px -10px rgba(0,0,0,0.75);   
+}
+a.classes-link{
+    cursor: default;
+}
+
+
+/* Contact */
+.selectpicker{
+    width: 100%;
+}
+
+
+/* Register */
+.register-form{
+    background-color: #333333;
+    padding: 30px;
+    width: 65%;
+    min-width: 300px;
+}
+
+#register h2{
+    margin-bottom: 40px;
+}
+
+.register-form h3{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.register-form a{
+    color: #169EB7;
+}
+.register-form a:hover{
+    color: #169EB7;
+}
+
+#register ul{
+    list-style: none;
+    font-size: 20px;
+    margin: auto;
+    padding: 0;
+}
+
+.fa-check{
+    margin-right: 5px;
+    color: #169EB7;
+}
+
+.vertical-center{
+     height: 65%;  /* Fallback for browsers do NOT support vh unit */
+  height: 66vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .vertical-center{
+        height: 40%;
+        height: 40vh;
+    }
+    #register h2{
+        margin-bottom: 0px;
+    }
+    .register-form{
+        margin: -20px;
+    }
+    
+
+}
+
+@media screen and (max-width: 407px) {
+    .vertical-center{
+        height: 50%;
+        height: 50vh;
+    }
+    #register h2{
+        margin-bottom: 20px;
+    }
+}
+
+    @media (max-width: 767px) {
+
+    .footer-links {
+        padding: 0px;
+        padding-left: 0px;
+    }
+    footer .container-fluid {
+        margin: 0;
+        width: auto;
+    }
+}

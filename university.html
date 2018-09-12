@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>University</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Add font awesome icons -->
+    <link href="assets/fontawesome-free-5.3.1-web/css/all.css" rel="stylesheet">
+
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="assets/bootstrap-3.3.7-dist/js/jquery-3.2.0.min.js"></script>
+    <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap select -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap-select.css">
+    <script src="assets/bootstrap-3.3.7-dist/js/bootstrap-select.js"></script>
+
+    <!-- My Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/myStyle.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/universityStyle.css">
+
+    <!-- My Scripts -->
+    <script src="assets/js/department_selector.js"></script>
+
+    <!-- Script for the department form - appearing and disappearing code -->
+    <script>
+        $(document).ready(function(){
+            $(".hasDepartment").click(function(){
+                var $target=$(this).closest('.col-sm-3');
+                var hidden = false;
+                var $element =$($target).find('.departments');
+                
+                if($($element).is(':visible') === true){
+                    hidden = false;
+                } else {
+                    hidden = true;
+                }
+                
+                $('.departments').hide("slow");
+                
+                if(hidden == true){
+                    $($target).find('.departments').show("slow");
+                }
+                else if(hidden == false){
+                    $($target).find('.departments').hide("slow");
+                }
+                
+            }); 
+        });
+	</script>
+
+</head>
+
+<body data-toggle="collapse" data-target="#myNavbar.in">
+
+
+        <!-- ******************************* Navbar ******************************* -->
+        <nav class="navbarTop navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand glyphicon glyphicon-home" href="index.html"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Classes <span class="caret"></span></a>
+                            <a href="#classes" class="classes-hoverEffect"></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="elementary.html">Elementary School</a></li>
+                                <li><a href="highSchool.html">Mid &amp; High School</a></li>
+                                <li><a href="university.html">University</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <span class="glyphicon glyphicon-log-in"></span>
+                                Login<span class="caret"></span>
+                            </a>
+
+                            <form class="dropdown-menu">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password">
+                                </div>
+                                <div class="checkbox">
+                                    <a href="#">Forget Password?</a>
+                                </div>
+                                <button type="button" class="btn btn-default btn-blue"> Login </button>
+                            </form>
+                        </li>
+                        <li><a href="index.html#register"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ******************************* /Navbar End ******************************* -->
+
+
+
+
+        <!-- ******************************* Universities ******************************* -->
+
+        <div class="container">
+
+            <!-- First Row -->
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <h3>Agriculture</h3>
+                    <p><br></p>
+                    <div class="shadow">
+                        <img class="img-responsive image" src="assets/img/universityKarbala.png">
+                        <div class="middle">
+                            <a class="info hasDepartment">Visit</a>
+                        </div>
+                    </div>
+
+                    <form class="departments">
+                        <div class="form-group">
+                            <select class="form-control selectpicker" title="Select Department" id="agriculture-selector">
+                                <option value="1">Plant protection</option>
+                                <option value="2">Horticulture and Garden Engineering</option>
+                                <option value="3">Animal Protection</option>
+                                <option value="4">Field Crop</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button onclick="show_selected_ag()" type="button" class="btn-block btn btn-default btn-blue">Visit</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-sm-3">
+                    <h3>Applied Medical Sciences</h3>
+                    <div class="shadow">
+                        <img class="img-responsive image" src="assets/img/ams.png">
+                        <div class="middle">
+                            <a class="info hasDepartment">Visit</a>
+                        </div>
+                    </div>
+
+                    <form class="departments">
+                        <div class="form-group">
+                            <select class="form-control selectpicker" title="Select Department" id="ams-selector">
+                                <option value="1">Pathological Analyzes</option>
+                                <option value="2">Environmental Health</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button onclick="show_selected_ams()" type="button" class="btn-block btn btn-default btn-blue">Visit</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-sm-3">
+                    <h3>Dentistry</h3>
+                    <p><br></p>
+                    <div class="shadow">
+                        <img class="img-responsive image" src="assets/img/dentistry.png">
+                        <div class="middle">
+                            <a class="info" href="dentistry.html">Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <h3>Education for Pure Sciences</h3>
+                    <div class="shadow">
+                        <img class="img-responsive image" src="assets/img/pureScience.png">
+                        <div class="middle">
+                            <a class="info hasDepartment">Visit</a>
+                        </div>
+                    </div>
+
+                    <form class="departments">
+                        <div class="form-group">
+                            <select class="form-control selectpicker" title="Select Department" id="pureScience-selector">
+                                <option value="1">Chemistry</option>
+                                <option value="2">Life Sciences</option>
+                                <option value="3">Physics</option>
+                                <option value="4">Mathematics</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button onclick="show_selected_pureScience()" type="button" class="btn-block btn btn-default btn-blue">Visit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div> <!-- /.row first -->
+
+
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <h3>Law</h3>
+                    <div class="shadow">
+                        <img class="img-responsive image" src="assets/img/law.png">
+                        <div class="middle">
+                            <a class="info" href="law.html">Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <h3>Medicine</h3>
+                    <div class="shadow">
+                        <img class="img-responsive image" src="assets/img/medicine.png">
+                        <div class="middle">
+                            <a class="info" href="medicine.html">Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <h3>Pharmacy</h3>
+                    <div class="shadow">
+                        <img class="img-responsive image" src="assets/img/pharmacy.png">
+                        <div class="middle">
+                            <a class="info" href="pharmacy.html">Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <h3>Science</h3>
+                    <div class="shadow">
+                        <img class="img-responsive image" src="assets/img/science.png">
+                        <div class="middle">
+                            <a class="info hasDepartment">Visit</a>
+                        </div>
+                    </div>
+
+                    <form class="departments">
+                        <div class="form-group">
+                            <select class="form-control selectpicker" title="Select Department" id="science-selector">
+                                <option value="1">Computer</option>
+                                <option value="2">Biology</option>
+                                <option value="3">Physics</option>
+                                <option value="4">Chemistry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button onclick="show_selected_science()" type="button" class="btn-block btn btn-default btn-blue">Visit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+
+
+        </div>
+</body>
+
+</html>

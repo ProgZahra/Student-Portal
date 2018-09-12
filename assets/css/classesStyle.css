@@ -1,0 +1,245 @@
+.container-fluid {
+    padding-top: 50px;
+}
+
+/*Holds both sidebar and main content*/
+.row.content {
+    margin: 0;
+    padding: 0;
+}
+
+/* ***************************************** The sidebar ***************************************** */
+.sidebar {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    overflow-x: hidden;
+    padding-bottom: 100px;
+    padding-top: 15px;
+    min-width: 160px;
+    background-color: #333333;
+    overflow-y: auto;
+}
+
+.sidebar h3 {
+    margin: 0;
+    padding-top: 0;
+    padding-right: 0;
+    text-align: left;
+    border-bottom: 2px solid #555;
+    padding-bottom: 15px;
+    margin-left: 12px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0px;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    display: block;
+    padding-top: 8px;
+    padding-right: 5px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    color: #9d9d9d;
+}
+
+.sidebar li a:hover {
+    color: #fff !important;
+    background-color: #70767C;
+}
+
+/*The sidebar submenus*/
+.submenu-items li a {
+    padding-left: 24px;
+}
+
+.submenu a i {
+    margin-right: 2px;
+}
+
+.submenu-items li.active a {
+    color: #fff !important;
+    background-color: #70767C;
+}
+
+/* Icon when the collapsible content is shown */
+.submenu a:after {
+    font-family: "Glyphicons Halflings";
+    content: "\e114";
+    float: right;
+    margin-left: 15px;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+/* Icon when the collapsible content is hidden */
+.collapsed a:after {
+    content: "\e080";
+}
+
+.submenu .fa,
+.submenu .glyphicon {
+    font-size: 15px;
+}
+
+
+/* ***************************************** The Main Content ***************************************** */
+.col-sm-10 {
+    position: relative;
+    margin-left: 200px;
+}
+
+/*
+The tab-pane is the container that is going to be switched when changing tabs (grades or nav-tabs)
+and the tab-content is the container for the whole thing
+*/
+.tab-content {
+    min-height: 500px;
+    padding: 0px 20px 20px 20px;
+}
+
+/*
+.tab-pane {
+    padding: 0 0 15px 0;
+}
+*/
+
+.nav-tabs {
+    border-bottom: 2px solid #DDD;
+    padding-top: 17px;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+    border-width: 0;
+}
+
+.nav-tabs > li > a {
+    border: none;
+    color: #666;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li > a:hover {
+    border: none;
+    color: #169EB7 !important;
+    background: transparent;
+}
+
+.nav-tabs > li > a::after {
+    content: "";
+    background: #169EB7;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -1px;
+    transition: all 250ms ease 0s;
+    transform: scale(0);
+}
+
+.nav-tabs > li.active > a::after,
+.nav-tabs > li:hover > a::after {
+    transform: scale(1);
+}
+
+/* Inside the tab-pane */
+h3.section-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+h3.video-title {
+    text-align: center;
+}
+
+.tab-pane figure {
+    text-align: center;
+}
+
+/* The file icons used to download the files */
+.tab-pane .fa {
+    font-size: 110px;
+    color: #4C4C4C;
+}
+
+.tab-pane .fa:hover {
+    color: #169EB7;
+}
+
+.tab-pane figcaption p {
+    font-size: 18px;
+}
+
+.embed-responsive{
+    background-color: #E3E3E3;
+}
+
+/* ***************************************** The Footer ***************************************** */
+footer .container-fluid {
+    margin: auto;
+    width: 808px;
+}
+
+.footer-links {
+    padding: 0px;
+    padding-left: 170px;
+}
+
+.footer-links .container-fluid {
+    padding-bottom: 60px;
+}
+
+/*
+.footer-copyrights {
+    padding-left: 170px;
+}
+*/
+
+
+
+
+
+/* ***************************************** Media Queries ***************************************** */
+@media (max-width: 767px) {
+    .col-sm-10 {
+        position: static;
+        margin-left: 0px;
+    }
+
+    .footer-links {
+        padding: 0px;
+        padding-left: 0px;
+    }
+
+    .footer-copyrights {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    footer .container-fluid {
+        margin: 0;
+        width: auto;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    .sidebar {
+        padding: 15px;
+        padding-bottom: 100px;
+    }
+
+    .row.content {
+        height: auto;
+    }
+}
+
+
+
+
+

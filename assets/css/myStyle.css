@@ -1,0 +1,187 @@
+body{
+    font: 400 15px "Trebuchet MS", Helvetica, sans-serif;
+    line-height: 1.8;
+    color: #818181; 
+}
+h2 {
+    margin-bottom: 30px;
+}
+
+/* Container */
+.bg-grey {
+    background-color: #E5E5E5; /* Light Grey */
+}
+
+/*Add media queries to center the "logo column" on screens smaller than 768 pixels wide.*/
+@media screen and (max-width: 768px) {
+    .col-sm-4{
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+
+/* Buttons */
+.btn-white,.btn-blue{
+    background-color: #169EB7; /* blue */
+    color: #fff;
+    border-color: #169EB7;
+}
+.btn-white:hover,.btn-white:focus {
+    background-color: transparent !important;
+    color: #fff !important;
+    border-color: #169EB7 !important;
+}
+.btn-blue:hover, .btn-blue:focus{
+    color: #169EB7 !important;
+    background-color: transparent !important;
+    border-color: #169EB7 !important;
+}
+
+/* Top Navigation */
+.navbarTop, .navbar{
+    margin-bottom: 0;
+    background-color: #333333;
+    z-index: 9999;
+    border: 0;   
+    line-height: 1.42857143 !important;  
+    border-radius: 0;
+}
+.navbar .container-fluid , .navbarTop .container-fluid{
+    padding: 0px 20px 0px 25px; /* top right bottom left */ 
+}
+
+/* Navbar Home Logo */
+.navbar-brand{
+    margin-right: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    color: #9d9d9d !important;
+}
+.navbar-brand:hover{
+    color: #fff !important;
+    background-color: #8E8E8E !important;
+}
+
+/* Navbar Links */
+    /* the ">" is used to specify only direct children */
+.navbar-nav>li>a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9d9d9d !important;
+    font-size: 15px !important;
+}
+.navbar-nav>li>a:hover{
+    color: #fff !important;
+}
+.navbar-nav>li:hover{
+    background-color: #8E8E8E !important;
+}
+.navbar-nav>li.active a{
+    color: #fff !important;
+    background-color: #169EB7 !important;
+}
+.navbar-nav .open>a{
+    color: #fff !important;
+    background-color: #8E8E8E !important;
+}
+
+/* Navbar Login Dropdown menu */
+form.dropdown-menu{
+    padding: 15px;
+    width: 230px;
+}
+form.dropdown-menu button{
+    width: 100%;
+}
+
+@media (max-width: 767px){
+    .navbar-nav .open .dropdown-menu { 
+    background-color: #fff !important;
+    }
+}
+
+/* Navbar Classes dropdown menu */
+.navbar-nav li a.classes-hoverEffect{
+    display: none;
+}
+.navbar-nav>li.active .dropdown-menu a {
+    color: #000 !important;
+    background-color: #fff !important;
+}
+.navbar-nav>li.active .dropdown-menu a:hover{
+    background-color: #D8D8D8 !important;
+}
+.navbar-nav>li .dropdown-menu a:hover{
+    background-color: #D8D8D8 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #7A7A7A; 
+}
+footer .glyphicon:hover{
+    color: #B5B5B5;
+}
+
+.footer-links ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-links{
+    background-color: #4C4C4C;
+}
+.footer-links{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.footer-links h3{
+    color: #969696;
+}
+.footer-links a,.footer-links p{
+    color: #7A7A7A; 
+}
+.footer-links a:hover{
+     color: #B5B5B5;
+}
+.footer-links a.fab{
+    font-size: 30px;
+    color: #7A7A7A; 
+}
+.footer-links a.fab:hover{
+    text-decoration: none;
+    color: #B5B5B5;
+}
+.footer-copyrights{
+    background-color: #333333;
+    padding: 15px;
+}
+
+
+
+/* Toggler */
+.navbar-collapse{
+    border-color: #169EB7;
+}
+
+
+
+.bootstrap-select.btn-group .dropdown-menu li a:hover {
+            background-color: #D8D8D8;
+        }
+
+
+
+

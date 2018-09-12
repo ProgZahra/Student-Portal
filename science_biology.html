@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Biology</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Add font awesome icons -->
+    <link href="assets/fontawesome-free-5.3.1-web/css/all.css" rel="stylesheet">
+
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="assets/bootstrap-3.3.7-dist/js/jquery-3.2.0.min.js"></script>
+    <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <!-- My Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/myStyle.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/classesStyle.css">
+    
+    <!-- My Scripts -->
+    <script src="assets/js/smoothScrolling.js"></script>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+            <div class="wrapper" data-toggle="collapse" data-target="#myNavbar.in">
+
+
+    <nav class="navbarTop navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#sidebar" style="float: left;">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand glyphicon glyphicon-home" href="index.html"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#features">Features</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Classes <span class="caret"></span></a>
+                        <a href="#classes" class="classes-hoverEffect"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="elementary.html">Elementary School</a></li>
+                            <li><a href="highSchool.html">Mid &amp; High School</a></li>
+                            <li><a href="university.html">University</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span class="glyphicon glyphicon-log-in"></span>
+                            Login<span class="caret"></span>
+                        </a>
+
+                        <form class="dropdown-menu">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Username">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="checkbox">
+                                <a href="#">Forget Password?</a>
+                            </div>
+                            <button type="button" class="btn btn-default btn-blue"> Login </button>
+                        </form>
+                    </li>
+                    <li><a href="index.html#register"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+    <div class="container-fluid">
+        <div class="row content">
+
+            <!-- *********************************** Left sidenav *********************************** -->
+            <div class="collapse navbar-collapse" id="sidebar">
+                <div class="col-sm-2 sidebar">
+                    <h3>Science - Biology</h3>
+                    <ul>
+                        <li class="collapsed submenu" data-toggle="collapse" data-target="#submenu1"><a href="#">Stage 1</a></li>
+                        <ul id="submenu1" class="collapse submenu-items">
+                            <li><a href="#">item 1</a></li>
+                            <li><a href="#">item 2</a></li>
+                        </ul>
+
+                        <li class="collapsed submenu" data-toggle="collapse" data-target="#submenu2"><a href="#">Stage 2</a></li>
+                        <ul id="submenu2" class="collapse submenu-items">
+                            <li><a href="#">item 1</a></li>
+                            <li><a href="#">item 2</a></li>
+                        </ul>
+
+                        <li class="collapsed submenu" data-toggle="collapse" data-target="#submenu3"><a href="#">Stage 3</a></li>
+                        <ul id="submenu3" class="collapse submenu-items">
+                            <li><a href="#">item 1</a></li>
+                            <li><a href="#">item 2</a></li>
+                        </ul>
+
+                        <li class="collapsed submenu" data-toggle="collapse" data-target="#submenu4"><a href="#">Stage 4</a></li>
+                        <ul id="submenu4" class="collapse submenu-items">
+                            <li><a href="#">item 1</a></li>
+                            <li><a href="#">item 2</a></li>
+                        </ul>
+
+                    </ul>
+                </div> <!-- /.col-sm-2 .sidenav -->
+            </div>
+            <!-- ***********************************//End Left sidenav//*********************************** -->
+
+
+
+            <!-- *********************************** Main Content *********************************** -->
+
+            <div class="col-sm-10">
+                <div class="tab-content">
+
+                    <!-- Tab Panels Menu -->
+                    <div role="tabpanel" class="tab-pane active" id="arabic">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#resources" aria-controls="resources" role="tab" data-toggle="tab">Resources</a>
+                            </li>
+
+                            <li role="presentation">
+                                <a href="#sheets" aria-controls="sheets" role="tab" data-toggle="tab">Q&amp;A Sheets</a>
+                            </li>
+
+                            <li role="presentation">
+                                <a href="#videos" aria-controls="videos" role="tab" data-toggle="tab">Videos</a>
+                            </li>
+
+                            <li role="presentation">
+                                <a href="#examples" aria-controls="examples" role="tab" data-toggle="tab">Examples</a>
+                            </li>
+                        </ul>
+                        <h2 style="padding-left:20px;">Biology - Stage 1 - Item 1</h2>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+
+                            <!-- - Resurces -->
+                            <div role="tabpanel" class="tab-pane active" id="resources">
+                                <h3 class="section-title">Lectures</h3>
+                        
+                            </div> <!-- /.tab-pane of - Resurces -->
+
+                            <!-- - Sheets -->
+                            <div role="tabpanel" class="tab-pane" id="sheets">
+                                <h3 class="section-title">Previous Years Exams</h3>
+                                <hr>
+                                <h3 class="section-title">Revision Questions</h3>
+                            </div><!-- /.tab-pane of - Resurces -->
+
+                            <!-- - Videos -->
+                            <div role="tabpanel" class="tab-pane" id="videos">
+                            </div> <!-- /.tab-pane of - Videos -->
+
+                            <div role="tabpanel" class="tab-pane" id="examples">
+                                <h4>No examples currently available.</h4>
+                                <p>Do you know some good examples? Then contact us <a href="index.html#contact">here</a> with the subject "Upload Resource".</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div> <!-- /.tab-content -->
+
+
+
+
+            </div> <!-- /.col-sm-10 -->
+            <!-- ***********************************//End Middle Content//*********************************** -->
+
+
+
+
+
+        </div> <!-- /.row .content -->
+    </div> <!-- /.container-fluid -->
+
+    <!-- Footer -->
+    <footer class="text-center">
+
+        <div class="footer-links">
+            <div class="row container-fluid">
+
+                <div class="col-sm-4 about-col">
+                    <img src="assets/img/LogoMakr_3UJ6re.png" width="150px;" class="img-responsive" style="display:inline;min-width:100px;">
+                    <!--                <h3>Student Portal</h3>-->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet consectetur dolor in elementum.</p>
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-google-plus-square"></a>
+                    <a href="#" class="fab fa-twitter-square"></a>
+                </div>
+
+                <div class="col-sm-2 col-sm-offset-1" style="margin-right:10px;">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">CodeForIraq</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-2">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-2">
+                    <h3>Language</h3>
+                    <a href="#">Arabic</a><br>
+                    <a href="#">English</a>
+                </div>
+
+            </div> <!-- /.row container-fluid -->
+        </div> <!-- /.footer-links -->
+
+        <div class="footer-copyrights">
+            <a href="#myPage" title="To Top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+            <p>&copy; Copyright 2018, Student Portal. All Rights Reserved.</p>
+            <p>CodeForIraq</p>
+        </div>
+
+    </footer>
+    </div>
+
+</body>
+
+</html>

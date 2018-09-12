@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Student Portal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Add font awesome icons -->
+    <link href="assets/fontawesome-free-5.3.1-web/css/all.css" rel="stylesheet">
+
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="assets/bootstrap-3.3.7-dist/js/jquery-3.2.0.min.js"></script>
+    <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap select -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap-select.css">
+    <script src="assets/bootstrap-3.3.7-dist/js/bootstrap-select.js"></script>
+
+    <!-- My Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/myStyle.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animation.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/indexStyle.css">
+
+    <!-- My Scripts -->
+    <script src="assets/js/jquery.matchHeight.js"></script>
+    <script src="assets/js/smoothScrolling.js"></script>
+    <script src="assets/js/animation.js"></script>
+
+    <!-- Script for the matchHeight code -->
+    <script>
+        $(document).ready(function(){
+        $(function() {
+            $('.match').matchHeight();
+        });
+        $(function() {
+            $('.match2').matchHeight();
+        });
+            
+             });   
+	</script>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div class="wrapper" data-toggle="collapse" data-target=".navbar-collapse.in">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand glyphicon glyphicon-home" href="index.html"></a>
+            </div>
+            
+           <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Classes <span class="caret"></span></a>
+                        <a href="#classes" class="classes-hoverEffect"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="elementary.html">Elementary School</a></li>
+                            <li><a href="highSchool.html">Mid &amp; High School</a></li>
+                            <li><a href="university.html">University</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span class="glyphicon glyphicon-log-in"></span>
+                            Login<span class="caret"></span>
+                        </a>
+
+                        <form class="dropdown-menu">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Username">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="checkbox">
+                                <a href="#">Forget Password?</a>
+                            </div>
+                            <button type="button" class="btn btn-default btn-blue"> Login </button>
+                        </form>
+                    </li>
+                    <li><a href="#register"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+                </ul>
+            </div>
+          
+        </div>
+    </nav>
+
+
+    <div class="jumbotron">
+        <div class="jumbotron-content">
+            <h1>Student Portal</h1>
+            <p>Everything what a student needs. Books, exam papers and solutions</p>
+            <a href="#classes"><button type="button" class="btn btn-default btn-lg btn-white">Classes</button></a>
+        </div>
+    </div>
+
+
+
+    <!-- About -->
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>About</h2>
+                <h4>Everything what a student need in one single place</h4>
+                <p>The goal of this portal is to provide all necessary study materials for students from primary school to college. This removes the effort from searching for exams and papers from the student, because everything what they need is available in one single place.Students can now focus on other things and don't need to waste their time with endless searching.</p>
+                <p>This page is supported by a team of volunteers from all different classes who are ready to help other people by sharing useful resources.</p>
+            </div>
+            <div class="col-sm-4 slideanim">
+                <span><img class="img-responsive img-fluid" src="assets/img/allInOne.png"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-grey ">
+        <div class="row">
+            <div class="col-sm-4 slideanim">
+                <span><img class="img-responsive img-fluid" src="assets/img/support.png"></span>
+            </div>
+            <div class="col-sm-8">
+                <h2>How to support?</h2>
+                <h4><strong>Do you want to be part of this amazing team?</strong></h4>
+                <h4><strong>Everyone can help</strong></h4>
+                <p>If you want to help, you simply need to register and start uploading your files. That's it.</p>
+                <p>So what are you waiting for? Create your free account now.</p>
+                <a href="#register"><button class="btn btn-default btn-lg btn-blue">Register</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Features -->
+    <div id="features" class="container-fluid text-center">
+        <h2>Features</h2>
+        <h4>What we offer</h4>
+        <br>
+
+        <!-- Features first Row -->
+        <div class="row slideanim">
+
+            <div class="col-sm-4">
+                <a class="features-link" href="#classes">
+                    <figure class="features-figure">
+                        <img class="img-responsive" src="assets/img/books.jpg" alt="books">
+                        <figcaption class="match">
+                            <h4 class="match2"><strong>Books &amp; Lectures</strong></h4>
+                            <p>All books and lectures are available to donwload as pdf files</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+
+            <div class="col-sm-4">
+                <a class="features-link" href="#classes">
+                    <figure class="features-figure">
+                        <img class="img-responsive" src="assets/img/cheat-sheet.jpg" alt="exam-and-sol">
+                        <figcaption class="match">
+                            <h4 class="match2"><strong>Exam papers &amp; their solutions</strong></h4>
+                            <p>Find a variation of exam papers of all different years with their solutions</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+
+            <div class="col-sm-4">
+                <a class="features-link" href="#classes">
+                    <figure class="features-figure">
+                        <img class="img-responsive" src="assets/img/video.jpg" alt="Videos">
+                        <figcaption class="match">
+                            <h4 class="match2"><strong>Videos</strong></h4>
+                            <p>Watch videos of tutorials or explanations</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div> <!-- /.row of first feature row -->
+        <br>
+
+
+        <!-- Features second Row -->
+        <div class="row slideanim">
+
+            <div class="col-sm-4">
+                <a class="features-link" href="#classes">
+                    <figure class="features-figure">
+                        <img class="img-responsive" src="assets/img/download.jpg" alt="download">
+                        <figcaption class="match">
+                            <h4 class="match2"><strong>Free Download</strong></h4>
+                            <p>All resources are available to download for free.</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+
+            <div class="col-sm-4">
+                <a class="features-link" href="#contact">
+                    <figure class="features-figure">
+                        <img class="img-responsive" src="assets/img/questions.jpg" alt="question">
+                        <figcaption class="match">
+                            <h4 class="match2"><strong>Ask Questions or Requests</strong></h4>
+                            <p>Send a ticket with your question to our team and we will try to provide the best solutions</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+
+            <div class="col-sm-4">
+                <a class="features-link" href="#contact">
+                    <figure class="features-figure">
+                        <img class="img-responsive" src="assets/img/team.jpg" alt="support">
+                        <figcaption class="match">
+                            <h4 class="match2"><strong>Support</strong></h4>
+                            <p>If you want to be part of the team or help by providing useful resources, then contact us.</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div> <!-- /.row of second feature row -->
+    </div> <!-- /.container-fluid of features -->
+
+
+
+    <!-- Classes -->
+    <div id="classes" class="container-fluid text-center bg-grey">
+        <h2>Classes</h2>
+        <h4>All available classes</h4>
+        <br>
+        <div class="row text-center slideanim">
+
+            <div class="col-sm-4">
+                <figure>
+                    <a class="classes-link" href="elementary.html"><img class="img-responsive classes-img" src="assets/img/ed.png"></a>
+                    <figcaption>
+                        <h4><strong>Elementary School</strong></h4>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="col-sm-4">
+                <figure>
+                    <a class="classes-link" href="highSchool.html"><img class="img-responsive classes-img" src="assets/img/lobster.png"></a>
+                    <figcaption>
+                        <h4><strong>Mid &amp; High School</strong></h4>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="col-sm-4">
+                <figure>
+                    <a class="classes-link" href="university.html"><img class="img-responsive classes-img" src="assets/img/university-building_23-2147506659.jpg"></a>
+                    <figcaption>
+                        <h4><strong>University</strong></h4>
+                    </figcaption>
+                </figure>
+            </div>
+
+        </div> <!-- /.row classes -->
+    </div> <!-- /.container-fluid of classes -->
+
+
+    <!-- Contact -->
+    <div id="contact" class="container-fluid text-center">
+        <h2 class="text-center">Contact</h2>
+        <h4>Contact us and we'll get back to you within 24 hours.</h4>
+
+        <div class="row slideanim">
+            <div class="col-sm-offset-4 col-sm-4">
+
+                <form style="margin-top:30px;">
+
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Name" type="text" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <select class="form-control selectpicker" title="Select Subject">
+                            <option>Question</option>
+                            <option>Upload Resource</option>
+                            <option>Application as a Team Member</option>
+                            <option>Bug Report</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="6"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn-block btn btn-default btn-blue" style="font-size:17px;padding-top:5px;padding-bottom:5px;">Send</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div> <!-- /.row contact -->
+    </div> <!-- /.container-fluid of contact -->
+
+
+
+    <!-- Register -->
+    <div id="register" class="container-fluid bg-grey">
+        <h2 class="text-center">Create an Account</h2>
+        <div class="row">
+
+            <div class="col-sm-5 col-sm-offset-1 vertical-center">
+                <ul>
+                    <li><i class="fa fa-check"></i>It is free</li>
+                    <li><i class="fa fa-check"></i>Bookmark your resources</li>
+                    <li><i class="fa fa-check"></i>Subscribe to a topic to get notified on new uploads</li>
+                    <li><i class="fa fa-check"></i>Send direct messages to team members</li>
+                </ul>
+            </div>
+
+            <div class="col-sm-6">
+                <form class="register-form slideanim">
+                    <h3>Register</h3>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Username" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Confirm Password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" required> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-lg btn-block btn-white">Register Now</button>
+                    </div>
+                </form>
+
+            </div>
+        </div> <!-- /.row contact -->
+    </div> <!-- /.container-fluid of contact -->
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+
+        <div class="footer-links">
+            <div class="row container-fluid">
+
+                <div class="col-sm-4 about-col">
+                    <img src="assets/img/LogoMakr_3UJ6re.png" width="150px;" class="img-responsive" style="display:inline;min-width:100px;">
+                    <!--                <h3>Student Portal</h3>-->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet consectetur dolor in elementum.</p>
+                    <a href="#" class="fab fa-facebook-square"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-google-plus-square"></a>
+                    <a href="#" class="fab fa-twitter-square"></a>
+                </div>
+
+                <div class="col-sm-2 col-sm-offset-1" style="margin-right:10px;">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">CodeForIraq</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-2">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-2">
+                    <h3>Language</h3>
+                    <a href="#">Arabic</a><br>
+                    <a href="#">English</a>
+                </div>
+
+            </div> <!-- /.row container-fluid -->
+        </div> <!-- /.footer-links -->
+
+        <div class="footer-copyrights">
+            <a href="#myPage" title="To Top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+            <p>&copy; Copyright 2018, Student Portal. All Rights Reserved.</p>
+            <p>CodeForIraq</p>
+        </div>
+
+    </footer>
+    </div>
+</body>
+
+</html>
